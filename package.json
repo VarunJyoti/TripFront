@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "react": "15.4.2",
+    "native-base": "^2.4.1",
+    "react": "16.3.0-alpha.1",
     "react-addons-update": "^15.4.2",
-    "react-native": "0.41.2",
+    "react-native": "0.54.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-form": "^6.5.0",
