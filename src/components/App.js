@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import HomeScreen from "./HomeScreen.js";
 import * as actions from '../actions';
-import { Container, Header, Title, Content, Footer,Item,Input,List,ListItem,Badge,Thumbnail, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
+import { Container, Header, Title, Content, Footer,Item,Input,List,ListItem,Badge,Thumbnail, FooterTab, Button, Left, Right, Body, Icon, Text,Card, CardItem } from 'native-base';
+
 class Home extends Component {
   render() {
     return (
       <Container>
         <Header>
           <Left>
-            <Button transparent>
+            <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
               <Icon name='menu' />
             </Button>
           </Left>
