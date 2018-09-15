@@ -1,15 +1,18 @@
-import React, { Component } from "react";
-import HomeScreen from "./HomeScreen.js";
-import App from "./App.js";
-import MyTrips from "./MyTrips.js";
-import ProfileScreen from "./ProfileScreen.js";
-import { DrawerNavigator } from "react-navigation";
-const HomeScreenRouter = DrawerNavigator(
-  {
-    Home: { screen: App },
-    MyTrips: { screen: MyTrips },
-    Profile: { screen: ProfileScreen}  
-   
-  }
-);
-export default HomeScreenRouter;
+
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import { NativeRouter, Route, Link, Switch } from 'react-router-native'
+import Login from '../components/Login/Login';
+import Signup from '../components/Login/Signup';
+
+
+const App = () => (
+  <NativeRouter>
+    <Switch>
+       <Route exact path="/" component={Login}/>
+       <Route exact path="/signup" component={Signup}/>
+    </Switch>
+  </NativeRouter>
+)
+
+export default App
